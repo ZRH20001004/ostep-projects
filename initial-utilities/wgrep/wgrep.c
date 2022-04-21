@@ -10,7 +10,6 @@ int search(char *term, char *source)
     {
         strncpy(dest, source + i, strlen(term));
         dest[strlen(term)] = '\0';
-        term[strlen(term)] = '\0';
         if (strcmp(term, dest) == 0)
         {
             return 0;
